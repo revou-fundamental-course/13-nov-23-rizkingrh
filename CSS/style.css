@@ -1,0 +1,16 @@
+.navigation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: min-content;
+}
+
+.navigation > a {
+    text-decoration: none;
+}
+
+.title-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
