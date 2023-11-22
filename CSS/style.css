@@ -1,16 +1,209 @@
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+/* Navbar */
 .navigation-header {
+    background-color: #90e0ef;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: min-content;
+    padding: 8px;
 }
-
+.navigation-header a img {
+    padding-top: 5px;
+    height: 35px;
+    padding-left: 50%;
+}
 .navigation > a {
     text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
 }
 
+.navigation a:hover {
+    color: whitesmoke; /* Ubah warna pada hover sesuai kebutuhan */
+}
+/* Bar Title */
 .title-header {
+    padding: 20px 50px 50px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    line-height: 1.5;
+}
+.title-header > h1 {
+    font-size: 35px;
+}
+
+
+/* Section Review and Form */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+/* Form */
+.form-container {
+    margin: 50px;
+    width: 25%;
+    background-color: #90e0ef;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container > h2 {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label {
+    margin-bottom: 8px;
+}
+.contact-form input,
+.contact-form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.contact-form .button-send {
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact-form .button-send:hover {
+    background-color: #0056b3;
+}
+
+.review {
+    margin: 50px;
+    background-color: #90e0ef;
+}
+.review img {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.slider-container {
+    width: 60%;
+    position: relative;
+    margin: 50px auto;
+}
+  
+.slides {
+    display: flex;
+}
+  
+.slide {
+    display: none;
+}
+  
+.slide img {
+    width: 100%;
+    height: auto;
+}
+  
+#button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+#button:hover {
+    background-color: #0056b3;
+}
+  
+#button:first-child {
+    left: 10px;
+}
+  
+#button:last-child {
+    right: 10px;
+}
+
+
+.our-package {
+    display: flex;
+    flex-direction: column;
+}
+.title-package {
+    background-color: #ddfaff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+.title-package > h1 {
+    font-size: 35px;
+}
+.content-package {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.description-package {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.call-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px 50px 50px 50px;
+}
+.call-action > button {
+    background-color: #007bff;
+    color: #fff;
+    margin: 20px;
+    width: 35%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.call-action > button:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    margin-top: 50px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }

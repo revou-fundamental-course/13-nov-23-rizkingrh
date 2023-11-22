@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agent</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <section class="navigation-header">
-            <a href="">Logo</a>
+            <a href=""><img src="assets/logotravel2.png" alt=""></a>
             <nav class="navigation">
                 <a href="">Home</a>
                 <a href="">Our Package</a>
@@ -18,20 +19,86 @@
         </section>
         <section class="title-header">
             <h1>Your Best Travel Agent</h1>
-            <h4>Your Happiness Is Our Happiness</h4>
+            <p>"Temukan petualangan tak terlupakan di setiap langkahmu! Bersiaplah untuk merasakan keindahan dunia, memenuhi orang-orang baru, dan mengumpulkan kenangan abadi. Mari jelajahi destinasi eksotis dan nikmati pengalaman tak terlupakan bersama kami. Setiap perjalanan adalah cerita baru yang menanti untuk ditulis, dan kami ada di sini untuk mengantarmu melalui kisah petualanganmu yang paling epik. Mulailah perjalanan tak terlupakanmu sekarang!"</p>
         </section>
     </header>
 
-    <main>
-        <section class="review">
+    <main class="content">
+        <section class="slider-container">
+            <div class="slides" id="slides">
+              <div class="slide"><img src="assets/gambar1.jpg" alt="Slide 1"></div>
+              <div class="slide"><img src="assets/gambar2.jpg" alt="Slide 2"></div>
+              <div class="slide"><img src="assets/gambar3.jpg" alt="Slide 3"></div>
+            </div>
+            <button id="button" onclick="prevSlide()">Previous</button>
+            <button id="button" onclick="nextSlide()">Next</button>
+            <p>Liburan Yang Menyeangkan Bersama Travel Agent</p>
             <img src="" alt="">
-            <h5>The best travel agent on this planet</h5>
+            <p>Florence Hugos</p>
+            <p>Ibu Rumah Tangga, 28</p>
         </section>
-        <section class="form">
-            <h5>Contact Us</h5>
-            <p>Please contact me about of RSVP</p>
+        <section class="form-container">
+            <h2>Contact Us</h2>
+            <p>Please contact me about of RSVP!</p>
+            <form method="post" class="contact-form">
+                <label for="name"><b>Your Name:</b></label>
+                <input type="text" id="name" name="name" placeholder="First and last name" required>
+          
+                <label for="email"><b>Email Address:</b></label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+          
+                <label for="interest"><b>What are you interested in?</b></label>
+                <select id="interest" name="interest" required>
+                  <option value="" disabled selected>Pilih opsi</option>
+                  <option value="travel">Travel</option>
+                  <option value="hotel">Hotel</option>
+                  <option value="rent-car">Rent Car</option>
+                </select>
+          
+                <button class="button-send" type="button">Send</button>
+              </form>
+    </main>
 
+    <main class="our-package">
+        <section class="title-package">
+            <h1>Our Package</h1>
+        </section>
+        <section class="content-package">
+            <nav>
+                <h3>Bali</h3>
+                <p>Testing</p>
+            </nav>
+            <nav>
+                <h3>Japan</h3>
+            </nav>
+            <nav>
+                <h3>Singapore</h3>
+            </nav>
+        </section>
+        <section class="description-package">
+            <nav>
+                <h3>Bandung</h3>
+            </nav>
+            <nav>
+                <h3>Surabaya</h3>
+            </nav>
+            <nav>
+                <h3>Third Feature</h3>
+            </nav>
         </section>
     </main>
+
+    <main class="call-action">
+        <h1>Thank You From Travel Agent</h1>
+        <p>"Selamat datang di pintu gerbang petualangan Anda yang tak terlupakan! Bersama kami, setiap langkah adalah cerita baru yang menanti untuk ditulis. Temukan keindahan dunia, temui orang-orang baru, dan rasakan kebahagiaan di setiap sudut destinasi kami. Dengan layanan yang berfokus pada kenyamanan dan pengalaman yang tak terlupakan, kami berkomitmen untuk menjadi mitra setia perjalanan Anda"</p>
+        <button class="button-call" type="button">Call To Action</button>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Travel Agent 2023</p>
+    </footer>
+
+
 </body>
 </html>
