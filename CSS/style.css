@@ -1,4 +1,3 @@
-/* default */
 body {
     margin: 0px;
     padding: 0px;
@@ -7,7 +6,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-
     header {
         display: flex;
         flex-direction: column;
