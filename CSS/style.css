@@ -18,6 +18,20 @@ body {
     header button {
         padding: 12px;
     } 
+    main {
+        flex-direction: column;
+        align-items: center !important;
+        margin-top: 0px !important;
+        gap: 2rem;
+    }
+    #content1 main > div{
+        width: 80%;
+    }
+
+    .form-section {
+        width: 80%;
+        border-radius: 10px;
+    }
 }
 
 .icon {
