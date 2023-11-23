@@ -125,6 +125,10 @@ header {
     display: none;
     flex-direction: column;
 }
+.anim:first-child {
+    display: flex;
+}
+
 .anim img {
     display: flex;
     border-radius: 10px;
