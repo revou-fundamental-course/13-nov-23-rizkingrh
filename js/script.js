@@ -1,41 +1,18 @@
-let currentSlide = 0;
+let slideIndex = 1;
+showSlides();
 
-function showSlide(index) {
-  const slides = document.querySelectorAll('.slide');
-  if (index < 0) {
-    currentSlide = slides.length - 1;
-  } else if (index >= slides.length) {
-    currentSlide = 0;
-  } else {
-    currentSlide = index;
-  }
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("anim");
 
-  slides.forEach((slide, i) => {
-    if (i === currentSlide) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-  });
+
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+
+    slides[slideIndex - 1].style.display = "flex";
+
+    setTimeout(showSlides, 5000);
 }
-
-function nextSlide() {
-  showSlide(currentSlide + 1);
-}
-
-function prevSlide() {
-  showSlide(currentSlide - 1);
-}
-
-// Initial display
-document.addEventListener('DOMContentLoaded', () => {
-  showSlide(currentSlide);
-});
-
-// Inisialisasi autoslide dengan interval 2 detik
-setInterval(autoSlide, 2000);
-
-// Initial display
-document.addEventListener('DOMContentLoaded', () => {
-  showSlide(currentSlide);
-});

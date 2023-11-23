@@ -1,104 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agent</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
+
 <body>
+    <!-- Navbar -->
     <header>
-        <section class="navigation-header">
-            <a href=""><img src="assets/logotravel2.png" alt=""></a>
-            <nav class="navigation">
-                <a href="">Home</a>
-                <a href="">Our Package</a>
-                <a href="">Call Us</a>
-            </nav>
-        </section>
-        <section class="title-header">
-            <h1>Your Best Travel Agent</h1>
-            <p>"Temukan petualangan tak terlupakan di setiap langkahmu! Bersiaplah untuk merasakan keindahan dunia, memenuhi orang-orang baru, dan mengumpulkan kenangan abadi. Mari jelajahi destinasi eksotis dan nikmati pengalaman tak terlupakan bersama kami. Setiap perjalanan adalah cerita baru yang menanti untuk ditulis, dan kami ada di sini untuk mengantarmu melalui kisah petualanganmu yang paling epik. Mulailah perjalanan tak terlupakanmu sekarang!"</p>
-        </section>
+        <img class="logo" src="assets/logotravel2.png" alt="icon">
+        <div class="navbar">
+            <a id="home" href="#content1">
+                <button>Home</button>
+            </a>
+            <a id="our-package" href="#content2-title">
+                <button>Our Package</button>
+            </a>
+            <a id="call" href="#content3">
+                <button>Call Us</button>
+            </a>
+        </div>
     </header>
 
-    <main class="content">
-        <section class="slider-container">
-            <div class="slides" id="slides">
-              <div class="slide"><img src="assets/gambar1.jpg" alt="Slide 1"></div>
-              <div class="slide"><img src="assets/gambar2.jpg" alt="Slide 2"></div>
-              <div class="slide"><img src="assets/gambar3.jpg" alt="Slide 3"></div>
+    <section id="content1">
+        <h1>Your Trusted Travel Agent's</h1>
+        <p>"Temukan petualangan tak terlupakan di setiap langkahmu! Bersiaplah untuk merasakan keindahan dunia, memenuhi orang-orang baru, dan mengumpulkan kenangan abadi. Mari jelajahi destinasi eksotis dan nikmati pengalaman tak terlupakan bersama kami. Setiap perjalanan adalah cerita baru yang menanti untuk ditulis, dan kami ada di sini untuk mengantarmu melalui kisah petualanganmu yang paling epik. Mulailah perjalanan tak terlupakanmu sekarang!"
+        </p>
+        <main>
+            <div class="review-section">
+                <div class="anim">
+                    <img src="assets/gambar1.jpg" alt="">
+                    <div class="description">
+                        <p>"Liburan jadi menyenangkan bersama Travel Agentku."</p>
+                        <div>
+                            <img class="icon" src="https://img.icons8.com/pastel-glyph/64/person-male--v3.png" alt="person-male--v3"/>
+                            <div class="review-comment">
+                                <h3 id="h3">Florence Hughes</h3>
+                                <p id="p">Ibu Rumah Tangga, 28</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="anim">
+                    <img src="assets/gambar2.jpg" alt="">
+                    <div class="description">
+                        <p>"Mumet? Healing solusinya"</p>
+                        <div>
+                            <img class="icon" src="https://img.icons8.com/pastel-glyph/64/person-male--v3.png" alt="person-male--v3"/>
+                            <div class="review-comment">
+                                <h3 id="h3">Budi Susanto</h3>
+                                <p id="p">Pekerja, 35</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="anim">
+                    <img src="assets/gambar3.jpg" alt="">
+                    <div class="description">
+                        <p>"Healing Yang Sangat Mengesankan"</p>
+                        <div>
+                            <img class="icon" src="https://img.icons8.com/pastel-glyph/64/person-male--v3.png" alt="person-male--v3"/>
+                            <div class="review-comment">
+                                <h3 id="h3">Wak Cowak</h3>
+                                <p id="p">Pekerja, 45</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="information">
+                    <p>
+                        Use this space to provide users with more information about your office.
+                        consider it a follow-up to
+                        your headline and explain the benefits of your service or product
+                    </p>
+                    <div>
+                        <img class="icon" src="https://img.icons8.com/color/48/light.png" alt="light"/>
+                        <div>
+                            <p>Your first feature, written in the form of a benefit statement.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="icon" src="https://img.icons8.com/color/48/light.png" alt="light"/>
+                        <div>
+                            <p>Your second feature, written in the form of a benefit statement.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="icon" src="https://img.icons8.com/color/48/light.png" alt="light"/>
+                        <div>
+                            <p>Your third feature, written in the form of a benefit statement.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button id="button" onclick="prevSlide()">Previous</button>
-            <button id="button" onclick="nextSlide()">Next</button>
-            <p>Liburan Yang Menyeangkan Bersama Travel Agent</p>
-            <img src="" alt="">
-            <p>Florence Hugos</p>
-            <p>Ibu Rumah Tangga, 28</p>
-        </section>
-        <section class="form-container">
-            <h2>Contact Us</h2>
-            <p>Please contact me about of RSVP!</p>
-            <form method="post" class="contact-form">
-                <label for="name"><b>Your Name:</b></label>
-                <input type="text" id="name" name="name" placeholder="First and last name" required>
-          
-                <label for="email"><b>Email Address:</b></label>
-                <input type="email" id="email" name="email" placeholder="example@email.com" required>
-          
-                <label for="interest"><b>What are you interested in?</b></label>
-                <select id="interest" name="interest" required>
-                  <option value="" disabled selected>Pilih opsi</option>
-                  <option value="travel">Travel</option>
-                  <option value="hotel">Hotel</option>
-                  <option value="rent-car">Rent Car</option>
-                </select>
-          
-                <button class="button-send" type="button">Send</button>
-              </form>
-    </main>
 
-    <main class="our-package">
-        <section class="title-package">
-            <h1>Our Package</h1>
-        </section>
-        <section class="content-package">
-            <nav>
-                <h3>Bali</h3>
-                <p>Testing</p>
-            </nav>
-            <nav>
-                <h3>Japan</h3>
-            </nav>
-            <nav>
-                <h3>Singapore</h3>
-            </nav>
-        </section>
-        <section class="description-package">
-            <nav>
-                <h3>Bandung</h3>
-            </nav>
-            <nav>
-                <h3>Surabaya</h3>
-            </nav>
-            <nav>
-                <h3>Third Feature</h3>
-            </nav>
-        </section>
-    </main>
+            <div class="form-section">
+                <h2>Contact Us</h2>
+                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
 
-    <main class="call-action">
-        <h1>Thank You From Travel Agent</h1>
-        <p>"Selamat datang di pintu gerbang petualangan Anda yang tak terlupakan! Bersama kami, setiap langkah adalah cerita baru yang menanti untuk ditulis. Temukan keindahan dunia, temui orang-orang baru, dan rasakan kebahagiaan di setiap sudut destinasi kami. Dengan layanan yang berfokus pada kenyamanan dan pengalaman yang tak terlupakan, kami berkomitmen untuk menjadi mitra setia perjalanan Anda"</p>
-        <button class="button-call" type="button">Call To Action</button>
-    </main>
+                <form action="">
+                    <div>
+                        <label for="name">Your Name:</label>
+                        <input class="input" name="name" type="name" placeholder="First and last name">
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input class="input" name="email" type="email" placeholder="example@email.com">
+                    </div>
+                    <div>
+                        <label for="interest">What are you interested in?</label>
+                        <select class="input" name="interest" id="interest">
+                            <option selected disabled value="">Select option</option>
+                            <option value="travel">Travel</option>
+                            <option value="hotel">Hotel</option>
+                            <option value="rent-car">Rent Car</option>
+                        </select>
+                    </div>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </main>
+    </section>
+
+    <h1 id="content2-title">Our Package</h1>
+    <section id="content2">
+        <div id="content2-top">
+            <div>
+                <img class="icon" src="https://img.icons8.com/color/48/light.png" alt="light"/>
+                <div>
+                    <h4 id="h4">Bali</h4>
+                    <p>This description supports and extends the bullet point above.</p>
+                </div>
+            </div>
+            <div>
+                <img class="icon" src="https://img.icons8.com/color/48/light.png" alt="light"/>
+                <div>
+                    <h4 id="h4">Japan</h4>
+                    <p>This description supports and extends the bullet point above.</p>
+                </div>
+            </div>
+            <div>
+                <img class="icon" src="https://img.icons8.com/color/48/light.png" alt="light"/>
+                <div>
+                    <h4 id="h4">Singapore</h4>
+                    <p>This description supports and extends the bullet point above.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="content2-bottom">
+            <div>
+                <img class="icon" src="https://img.icons8.com/ios-glyphs/30/star--v1.png" alt="star--v1"/>
+                <div>
+                    <h4 id="h4">Bandung</h4>
+                    <p>This description supports and extends the bullet point above.</p>
+                </div>
+            </div>
+            <div>
+                <img class="icon" src="https://img.icons8.com/ios-glyphs/30/star--v1.png" alt="star--v1"/>
+                <div>
+                    <h4 id="h4">Surabaya</h4>
+                    <p>This description supports and extends the bullet point above.</p>
+                </div>
+            </div>
+            <div>
+                <img class="icon" src="https://img.icons8.com/ios-glyphs/30/star--v1.png" alt="star--v1"/>
+                <div>
+                    <h4 id="h4">Third Feature</h4>
+                    <p>This description supports and extends the bullet point above.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content3">
+        <h1>Your Closing Argument Headline</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ratione numquam consequatur eos similique adipisci omnis possimus, rerum sint aliquid sapiente consectetur sequi non reprehenderit ex corporis? Cupiditate, labore enim.</p>
+        <button>CALL TO ACTION</button>
+    </section>
 
     <footer>
-        <hr>
-        <p>Travel Agent 2023</p>
+        <img class="logo-footer" src="assets/logotravel2.png" alt="logo">
+        <div>
+            <p>Travel Agent © 2023</p>
+        </div>
     </footer>
-
-
 </body>
 </html>
