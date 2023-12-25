@@ -3,7 +3,7 @@ showSlides();
 
 function showSlides() {
     let i;
-    let slides = document.getElementsByClassName("slide");
+    let slides = document.getElementsByClassName("anim");
     
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -14,7 +14,7 @@ function showSlides() {
 
     slides[slideIndex - 1].style.display = "flex";
 
-    setTimeout(showSlides, 5000);
+    setTimeout(showSlides, 3000);
     console.log(slideIndex);
 }
 
